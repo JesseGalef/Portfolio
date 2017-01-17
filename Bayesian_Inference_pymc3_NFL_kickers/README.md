@@ -35,18 +35,18 @@ The pymc3 library makes this easy - incorporating distributions of the prior's p
 
 By the end, we have probability distributions we can compare.  Stover's a known quantity, with a narrow range of accuracies - our 95% credible interval indicates that we think his accuracy is likely to be between 81.3% and 91.8%.  Cundiff is a bit more of a mystery - his 20 kicks make us think his accuracy is 95% likely to be between 74.1% and 94.4%.
 
-![alt text](/assets/AccuracyProbabilityDistributions.png "Kicker Accuracy Probability Distributions")
+![alt text](assets/AccuracyProbabilityDistributions.png "Kicker Accuracy Probability Distributions")
 
 Because these are bayesian probability distributions of how likely we think different accuracies are, we can answer our 3 questions directly.  
 
 A) 61.7% of the probability distribution has Stover's accuracy higher than Cundiff's.  
-![alt text](/assets/deltaDistribution_0.png "Kicker Accuracy Probability Distributions")
+![alt text](assets/deltaDistribution_0.png "Kicker Accuracy Probability Distributions")
 
 B) Stover's accuracy was .02 higher than Cundiff's in 47.5% of the probability distribution - his agent was incorrect.
 
-![alt text](/assets/deltaDistribution_0.png "Kicker Accuracy Probability Distributions")
+![alt text](assets/deltaDistribution_0.png "Kicker Accuracy Probability Distributions")
 
 C) 1.8% of Stover's Accuracy Probability Distribution was over .92, compared to 10.5% of Cundiff's, making Cundiff almost 6 times more likely to be a 'great' kicker. Stover is a known quantity, and while it's very likely he's good, he's unlikely to be great. 
 
-![alt text](/assets/AccuracyProbabilityDistributions_92.png "Kicker Accuracy Probability Distributions")
+![alt text](assets/AccuracyProbabilityDistributions_92.png "Kicker Accuracy Probability Distributions")
 
