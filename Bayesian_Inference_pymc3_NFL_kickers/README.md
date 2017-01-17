@@ -44,7 +44,7 @@ A) 61.7% of the probability distribution has Stover's accuracy higher than Cundi
 
 B) Stover's accuracy was .02 higher than Cundiff's in 47.5% of the probability distribution - his agent was incorrect.
 
-![alt text](assets/deltaDistribution_0.png "Kicker Accuracy Probability Distributions")
+![alt text](assets/deltaDistribution_02.png "Kicker Accuracy Probability Distributions")
 
 C) 1.8% of Stover's Accuracy Probability Distribution was over .92, compared to 10.5% of Cundiff's, making Cundiff almost 6 times more likely to be a 'great' kicker. Stover is a known quantity, and while it's very likely he's good, he's unlikely to be great. 
 
