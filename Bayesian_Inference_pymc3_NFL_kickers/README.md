@@ -15,11 +15,19 @@ The general manager looks to you. "What do you think? Is making 19 out of 20 kic
 
 What's your intuition? 
 
+---
+
+## Three Questions:
+
 A) General Manager's Question: How likely is Cundiff to be more accurate than Stover?
+
 B) Stover's Agent's Claim: How likely is Stover to be at least 2% more accurate than Cundiff?
+
 C) Cundiff's Agent's Claim: If having an accuracy of over 92% counts as great, how much more likely is Cundiff to be a 'great' kicker compared to Stover?
 
+---
 
+### Modeling the Kickers
 
 Typical null hypothesis significance testing would ask: "If the two kickers were equally skilled, what are the chances that we would see their averages differ this much or more?" Applying a chi-squared contingency test, we would find that p > .6, indicating that there's a decent chance the kickers are equally good, and we can't reject the possibility.
 
@@ -33,20 +41,29 @@ We can use these data to generate possible priors for how accurate rookie kicker
 
 The pymc3 library makes this easy - incorporating distributions of the prior's parameters that produce the rookie data, and distributions of possible Stover & Cundiff accuracies that produce the results. It converges on the best distributions one step at a time, taking values and updating the distributions tens of thousands of times based on how well they explained our observations.  
 
-By the end, we have probability distributions we can compare.  Stover's a known quantity, with a narrow range of accuracies - our 95% credible interval indicates that we think his accuracy is likely to be between 81.3% and 91.8%.  Cundiff is a bit more of a mystery - his 20 kicks make us think his accuracy is 95% likely to be between 74.1% and 94.4%.
+---
+
+By the end, we have probability distributions we can compare.  Stover's a known quantity, with a narrow range of accuracies - our 95% credible interval indicates that we think his accuracy is likely to be between 81.3% and 91.8%.  Cundiff is a bit more of a mystery - his 20 kicks make us think his accuracy is likely to be between 74.1% and 94.4%.
 
 ![alt text](assets/AccuracyProbabilityDistributions.png "Kicker Accuracy Probability Distributions")
 
 Because these are bayesian probability distributions of how likely we think different accuracies are, we can answer our 3 questions directly.  
 
-A) 61.7% of the probability distribution has Stover's accuracy higher than Cundiff's.  
+**A) General Manager's Question: How likely is Cundiff to be more accurate than Stover?**
+
+61.7% of the probability distribution has Stover's accuracy higher than Cundiff's. 
+
 ![alt text](assets/deltaDistribution_0.png "Kicker Accuracy Probability Distributions")
 
-B) Stover's accuracy was .02 higher than Cundiff's in 47.5% of the probability distribution - his agent was incorrect.
+**B) Stover's Agent's Claim: How likely is Stover to be at least 2% more accurate than Cundiff?**
+
+Stover's accuracy was .02 higher than Cundiff's in 47.5% of the probability distribution - his agent was incorrect.
 
 ![alt text](assets/deltaDistribution_02.png "Kicker Accuracy Probability Distributions")
 
-C) 1.8% of Stover's Accuracy Probability Distribution was over .92, compared to 10.5% of Cundiff's, making Cundiff almost 6 times more likely to be a 'great' kicker. Stover is a known quantity, and while it's very likely he's good, he's unlikely to be great. 
+**C) Cundiff's Agent's Claim: If having an accuracy of over 92% counts as great, how much more likely is Cundiff to be a 'great' kicker compared to Stover?**
+
+1.8% of Stover's Accuracy Probability Distribution was over .92, compared to 10.5% of Cundiff's, making Cundiff almost 6 times more likely to be a 'great' kicker. Stover is a known quantity, and while it's very likely he's good, he's unlikely to be great. 
 
 ![alt text](assets/AccuracyProbabilityDistributions_92.png "Kicker Accuracy Probability Distributions")
 
