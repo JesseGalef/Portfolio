@@ -2,6 +2,7 @@
 
 ## January 2017 Portfolio Project, using BeautifulSoup to perform webscraping and pymc3 to implement probabalistic programming
 
+![Matt Stover](assets/matt_stover.jpeg "Matt Stover")
 
 You're the chief data scientist of a foobtall team, and you're facing a difficult decision. You're in the head office with the general manager and the team owner, and you're getting ready to sign a new kicker to the team. His name is Matt Stover, and his agent boasts that he made 178 out of 200 field goals - 89%. 
 
