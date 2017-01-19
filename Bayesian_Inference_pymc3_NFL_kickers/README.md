@@ -16,6 +16,11 @@ The general manager looks to you. "What do you think? Is making 19 out of 20 kic
 
 What's your intuition?
 
+| | Stover | Cundiff |
+| ---| --- | --- |
+| Missed | 22 | 1 |
+| Made | 178 | 19 |
+
 ---
 
 ## Three Questions:
