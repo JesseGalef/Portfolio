@@ -9,19 +9,18 @@ This project scrapes transcripts from CSPAN.org to train a model to identify the
 
 In addition to graphs visualizing the results, I created [an interactive D3 Javascript page](https://rawgit.com/jessegalef/TrumpiestSentences/master/interactive.html) for visitors to play with the results, enter their own sentences for evaluation, and look up terms.
 
-[![screen-shot-2016-10-19-at-7-25-47-pm](https://measureofdoubt.files.wordpress.com/2016/10/screen-shot-2016-10-19-at-7-25-47-pm.png)](https://rawgit.com/jessegalef/TrumpiestSentences/master/interactive.html)
+One result:
 
-![pronouns](Trumpiest_Sentences/assets/widerPronouns.png)
+<img src='Trumpiest_Sentences/assets/widerPronouns.png' width='500' />
 
 ## 2) [Evaluating NFL Play Calling Predictability](https://github.com/JesseGalef/Portfolio/tree/master/NFL_Playcalling) - Controling for multiple non-linear confounding variables using inverse probability of treatment weighting
 
-Summary: There's a curious pattern in NFL play calling, which we think might be the result of coaches' irrationality. But there are so many confounding variables in play - score, time, QB quality, etc. - that we need to control for those first before passing judgement.
+<img src='NFL_Playcalling/data/Lead_distribution_split.png' width='400' style='float: right;' />Summary: There's a curious pattern in NFL play calling, which we think might be the result of coaches' irrationality. But there are so many confounding variables in play - score, time, QB quality, etc. - that we need to control for those first before passing judgement.
 
 The project is an exercise in feature engineering and the 'inverse probability of treatment weighting' technique of controling for confounds. These features were disproportionatly distributed between the groups I was comparing, but became far more similar after being reweighted.
 
-<img src='NFL_Playcalling/data/Lead_distribution_split.png' width='300' style='float: right;' />
+<img src='NFL_Playcalling/data/all_yards_playcalling.png' width='300' style='float: right;' />
 
-![Playcalling](NFL_Playcalling/data/all_yards_playcalling.png)
 
 ## 3) [Making Judgements on Limited Information](https://github.com/JesseGalef/Portfolio/tree/master/Bayesian_Inference_pymc3_NFL_kickers) - Using Bayesian Inference to Compare Hypothetical Options
 
@@ -31,4 +30,4 @@ The project scrapes data from NFL.com to use as a prior distribution, then shows
 
 P-values address "Given a hypothesis, how likely are we to see this observation?" Bayesian techniques address "Given your observations and prior beliefs, how likely is this hypothesis?"
 
-![probability_distribution](Bayesian_Inference_pymc3_NFL_kickers/assets/AccuracyProbabilityDistributions_92.png)
+<img src='Bayesian_Inference_pymc3_NFL_kickers/assets/AccuracyProbabilityDistributions_92' width='500' />
