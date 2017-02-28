@@ -15,7 +15,7 @@ One result:
 
 ## 2) [Evaluating NFL Play Calling Predictability](https://github.com/JesseGalef/Portfolio/tree/master/NFL_Playcalling) - Controlling for multiple non-linear confounding variables using inverse probability of treatment weighting
 
-Summary: There's a curious pattern in NFL play calling, which we think might be the result of coaches' irrationality. But there are so many confounding variables in play - score, time, QB quality, etc. - that we need to control for those first before passing judgment.
+Summary: There's a curious pattern in NFL play calling, which we think might be the result of coaches' irrationality. But there are so many confounding variables in play - score, time, QB quality, etc. - that we need to control for those first before passing judgement.
 
 The project is an exercise in feature engineering and the 'inverse probability of treatment weighting' technique of controlling for confounds. These features were disproportionately distributed between the groups I was comparing, but became far more similar after being reweighted.
 
@@ -23,7 +23,7 @@ The project is an exercise in feature engineering and the 'inverse probability o
 
 <img src='NFL_Playcalling/data/all_yards_playcalling.png' width='500' />
 
-## 3) [Making Judgments on Limited Information](https://github.com/JesseGalef/Portfolio/tree/master/Bayesian_Inference_pymc3_NFL_kickers) - Using Bayesian Inference to Compare Hypothetical Options
+## 3) [Making Judgements on Limited Information](https://github.com/JesseGalef/Portfolio/tree/master/Bayesian_Inference_pymc3_NFL_kickers) - Using Bayesian Inference to Compare Hypothetical Options
 
 This was an example probabilistic programming problem I created for the data science class I was TA'ing. If you have two options, one established and one much newer, how do you judge the probability each is better given the limited information you have?
 
