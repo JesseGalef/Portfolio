@@ -19,10 +19,9 @@ Summary: There's a curious pattern in NFL play calling, which we think might be 
 
 The project is an exercise in feature engineering and the 'inverse probability of treatment weighting' technique of controling for confounds. These features were disproportionatly distributed between the groups I was comparing, but became far more similar after being reweighted.
 
-![lead_distribution](NFL_Playcalling/data/Lead_distribution_split.png)
+<img src='NFL_Playcalling/data/Lead_distribution_split.png' width='300' style='float: right;' />
 
 ![Playcalling](NFL_Playcalling/data/all_yards_playcalling.png)
-all_yards_playcalling
 
 ## 3) [Making Judgements on Limited Information](https://github.com/JesseGalef/Portfolio/tree/master/Bayesian_Inference_pymc3_NFL_kickers) - Using Bayesian Inference to Compare Hypothetical Options
 
