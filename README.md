@@ -13,7 +13,7 @@ One result:
 
 <img src='Trumpiest_Sentences/assets/widerPronouns.png' width='500' />
 
-## 2) [Evaluating NFL Play Calling Predictability](https://github.com/JesseGalef/Portfolio/tree/master/NFL_Playcalling) - Controling for multiple non-linear confounding variables using inverse probability of treatment weighting
+## 2) [Evaluating NFL Play Calling Predictability](https://github.com/JesseGalef/Portfolio/tree/master/NFL_Playcalling) - Controlling for multiple non-linear confounding variables using inverse probability of treatment weighting
 
 Summary: There's a curious pattern in NFL play calling, which we think might be the result of coaches' irrationality. But there are so many confounding variables in play - score, time, QB quality, etc. - that we need to control for those first before passing judgement.
 
