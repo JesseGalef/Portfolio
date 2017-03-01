@@ -1,5 +1,6 @@
 # Jesse Galef Data Science Portfolio Projects
 
+[Resume Here (pdf)](Jesse_Galef_Resume.pdf)
 
 ## [1) Quantifying the 'Trumpiness' of Political Speech Using Natural Language Processing](https://github.com/JesseGalef/Portfolio/tree/master/Trumpiest_Sentences)
 
@@ -25,10 +26,10 @@ The project is an exercise in feature engineering and the 'inverse probability o
 
 ## 3) [Making Judgements on Limited Information](https://github.com/JesseGalef/Portfolio/tree/master/Bayesian_Inference_pymc3_NFL_kickers) - Using Bayesian Inference to Compare Hypothetical Options
 
-This was an example probabilistic programming problem I created for the data science class I was TA'ing. If you have two options, one established and one much newer, how do you judge the probability each is better given the limited information you have?
+Summary: This project was an example probabilistic programming problem I created for the data science class I was TA'ing. If you have two options, one established and one much newer, how do you judge the probability each is better given the limited information you have?
 
-The project scrapes data from NFL.com to use as a prior distribution, and then it shows the students how to use the pymc3 library to generate new probability distributions.
+For the class, the example uses hypothetical field goal kickers, but it generalizes to other topics including A/B testing, 
 
-P-values address "Given a hypothesis, how likely are we to see this observation?" Bayesian techniques address "Given your observations and prior beliefs, how likely is this hypothesis?"
+The project scrapes data from NFL.com to use as a prior distribution, then it shows the students how to use the pymc3 library to generate new probability distributions.
 
 <img src='Bayesian_Inference_pymc3_NFL_kickers/assets/AccuracyProbabilityDistributions_92.png' width='500' />
