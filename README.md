@@ -1,6 +1,9 @@
 # Jesse Galef Data Science Portfolio Projects
 
-[Resume Here (pdf)](Jesse_Galef_Resume.pdf)
+###[Resume (pdf)](Jesse_Galef_Resume.pdf)
+###[LinkedIn](https://www.linkedin.com/in/jessegalef)
+
+--- 
 
 ## [1) Quantifying the 'Trumpiness' of Political Speech Using Natural Language Processing](https://github.com/JesseGalef/Portfolio/tree/master/Trumpiest_Sentences)
 

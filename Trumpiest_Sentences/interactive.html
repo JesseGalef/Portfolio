@@ -6,7 +6,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:image" content="https://github.com/JesseGalef/TrumpiestSentences/master/pronouns.png" />
 <meta property="og:url" content="https://github.com/JesseGalef/TrumpiestSentences/master/interactive.html" />
-<meta property="og:description" content="What makes Trump's speaking style distinct from Clinton's? Of all the things said on the campaign trail, what sentences are the Trump-iest? Can you beat the model at predicting who said what?" /> -->
+<meta property="og:description" content="What makes Trump's speaking style distinct from Clinton's? Of all the things said on the campaign trail, what sentences are the 'Trumpiest'? Can you beat the model at predicting who said what?" /> -->
 
 		<style>
 			.hidden {visibility: hidden;}
@@ -26,7 +26,7 @@
 				float: left;
 			}
 			#ClintonButton {
-				background: url('Clintonheadshot.jpg');
+				background: url('assets/Clintonheadshot.jpg');
 			     outline: none;
 			     border: none;
 			     width: 159px;
@@ -35,7 +35,7 @@
 			     cursor:pointer;
 			}
 			#TrumpButton {
-				background: url('Trumpheadshot.jpg');
+				background: url('assets/Trumpheadshot.jpg');
 			     outline: none;
 			     border: none;
 			     width: 159px;
@@ -54,7 +54,7 @@
 		var coef = {};
 		var sorted_coef = [];
 
-		d3.csv("average_coef.csv", function(error, dataset) {
+		d3.csv("assets/average_coef.csv", function(error, dataset) {
 			dataset.forEach(function(d) {
 				coef[d['']] = {};
 				coef[d['']]['Trump'] = d.Trump;
@@ -66,7 +66,7 @@
 
 
 		var sentences = [];
-		d3.csv("cv_result.csv", function(error, dataset) {
+		d3.csv("assets/cv_result.csv", function(error, dataset) {
 			dataset.forEach(function(d) {
 				this_sentence = {};
 				this_sentence['Sentence'] = d.sentence;
@@ -84,7 +84,7 @@
 
 		var links = {};
 		
-		d3.csv("speech_links.csv", function(error, dataset) {
+		d3.csv("assets/speech_links.csv", function(error, dataset) {
 			dataset.forEach(function(d) {
 				links[d['idx']] = d['link'];
 			});
@@ -440,7 +440,7 @@
 				<div id='coef_div'></div>
 			</div>
 
-			<div id='hiddenEasterEgg' class='hidden'><img src='pronouns.png' /></div>
+			<div id='hiddenEasterEgg' class='hidden'><img src='assets/pronouns.png' /></div>
 
 		</div> 
 	</body>
