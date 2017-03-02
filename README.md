@@ -1,6 +1,6 @@
 # Jesse Galef Data Science Portfolio Projects
 
-###[Resume (pdf)](Jesse_Galef_Resume.pdf)
+###[Resume (pdf)](https://github.com/JesseGalef/Portfolio/raw/master/Jesse_Galef_Resume.pdf)
 ###[LinkedIn](https://www.linkedin.com/in/jessegalef)
 
 --- 
