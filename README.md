@@ -28,8 +28,8 @@ The project is an exercise in feature engineering and the 'inverse probability o
 
 Summary: This project was an example probabilistic programming problem I created for the data science class I was TA'ing. If you have two options, one established and one much newer, how do you judge the probability each is better given the limited information you have?
 
-For the class, the example uses hypothetical field goal kickers, but it generalizes to other topics including A/B testing, 
+For the class, the example uses hypothetical field goal kickers, but it generalizes to other topics like A/B testing.
 
-The project scrapes data from NFL.com to use as a prior distribution, then it shows the students how to use the pymc3 library to generate new probability distributions.
+The project scrapes data from NFL.com to use as a prior distribution, then it shows the students how to use the pymc3 library to generate new probability distributions and answer specific questions.
 
 <img src='Bayesian_Inference_pymc3_NFL_kickers/assets/AccuracyProbabilityDistributions_92.png' width='500' />
