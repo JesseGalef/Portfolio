@@ -522,17 +522,33 @@
 					barSvgWidth = 400;
 					labelWidth = 100;
 					barSvgHeight = 400;
-
+					barMarginTop = 20;
+					
 					barSvg = d3.select('#strategies_div').append('svg')
 							.attr('width', barSvgWidth)
 							.attr('height', barSvgHeight);
+
+					barLegend = barSvg.append('g');
+					barLegend.append('text')
+						.attr('y', '1em')
+						.attr('x', '0')
+						// .style('fill', traitColors['greedy'])
+						.text('Defect Scores More');
+
+					barLegend.append('text')
+						.attr('y', '1em')
+						.attr('x', barSvgWidth)
+						.style('text-anchor', 'end')
+						// .style('fill', traitColors['greedy'])
+						.text('Cooperate Scores More');
+
 
 					bars = barSvg.append('g');
 					labels = barSvg.append('g');
 
 					yBarScale = d3.scale.ordinal()
 								  .domain(d3.entries(this.sortedScoreDistribution).map(function(d) {return d.key}))
-								  .rangeBands([0,barSvgHeight],.2);
+								  .rangeBands([barMarginTop,barSvgHeight],.2);
 
 					yBarValue = function(d) {return d.key;};
 					yBarMap = function(d) {return yBarScale(yBarValue(d));};
@@ -576,6 +592,14 @@
 					if (this.iterations == 0){
 						this.prepareStrategyCanvas();
 					};
+
+
+					// xBarScale.domain(
+					// 	[Math.min(
+					// 		d3.min(d3.entries(this.sortedScoreDistribution), xBarValue),
+					// 		-2),
+					// 	Math.max(d3.max(d3.entries(this.sortedScoreDistribution), xBarValue),
+					// 		2)]);
 
 					theseBars = bars.selectAll('rect')
 						.data(d3.entries(this.sortedScoreDistribution));
@@ -633,6 +657,20 @@
 
 					lineSets = {};
 					traitColors = {'greedy': 'rgb(0,255,0)', 'forgiving': 'rgb(0,0,255)', 'punishing':'rgb(255,0,0)'};
+
+					legend = linesSvg.append('g');
+					legend.append('text')
+						.attr('y', '1em')
+						.style('fill', traitColors['greedy'])
+						.text('greedy')
+					legend.append('text')
+						.attr('y', '2.5em')
+						.style('fill', traitColors['forgiving'])
+						.text('forgiving')
+					legend.append('text')
+						.attr('y', '4em')
+						.style('fill', traitColors['punishing'])
+						.text('punishing')	
 
 
 					for (trait in this.traitHistory[this.iterations]){
