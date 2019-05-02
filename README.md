@@ -36,3 +36,15 @@ For the class, the example uses hypothetical field goal kickers, but it generali
 The project scrapes data from NFL.com to use as a prior distribution, then it shows the students how to use the pymc3 library to generate new probability distributions and answer specific questions.
 
 <img src='Bayesian_Inference_pymc3_NFL_kickers/assets/AccuracyProbabilityDistributions_92.png' width='500' />
+
+## 4) [Estimating Pi from Random Numbers](https://github.com/JesseGalef/Portfolio/tree/master/EstimatingPi_VarianceReduction) - Reducing Variance using Antithetic and Control Variates
+
+Summary: This was a fun little project I put together to demonstrate techniques I was learning in my Simulations course (IEOR 4404) in graduate school. 
+
+Using only 10,000 random numbers, how accurately can we estimate pi? The classic technique of plotting points and counting how many fall within a quarter-circle does pretty well, but there's a decent margin of error. 
+
+<img src='EstimatingPi_VarianceReduction/points.png' width='500' />
+
+With unlimited random points, our estimate would get closer and closer to the true value of pi. But even sticking with only our 10,000 random numbers, we can apply some tricks and narrow our confidence interval significantly.
+
+<img src='EstimatingPi_VarianceReduction/antithetic.png' width='500' />
