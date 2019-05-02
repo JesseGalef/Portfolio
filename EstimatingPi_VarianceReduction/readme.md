@@ -1,3 +1,10 @@
+## Estimating Pi with Random Numbers
+### Reducing Variance using Antithetic and Control Variates
+
+This was a fun little project I put together while taking a Simulations course (IEOR 4404). You can check out the code in the **[Jupyter Notebook](estimating_pi_varianceReduction.ipynb)**.
+
+___
+
 If I gave you 10,000 random numbers between 0 and 1, how precisely could you estimate pi? It's Pi Approximation Day (22/7 in the European format), which seems like the perfect time to share some math! 	
 
 When we're modeling something complex and either can't or don't want to bother to find a closed-form analytic solution, we can find a way to get close to the answer with a Monte Carlo simulation. The more precisely we want to estimate the answer, the more simulations we would create. 
@@ -41,7 +48,9 @@ So how does this help us? It looks like we just have two different ways to get t
 
 Well, if f(x) is particularly high, then f(1-x) is going to be particularly low. By pairing each random number with its converse , we can offset some of the error and get an estimation more closely centered around the true mean. Taking the average of two distributions, each with the same expected value should still give us the same answer. 
 
-(This trick, known as using **[antithetic variates](https://en.wikipedia.org/wiki/Antithetic_variates)**, doesn't work with every function, but works here because the function f(x) always decreases as x increases.) ![antithetic](antithetic.png)
+(This trick, known as using **[antithetic variates](https://en.wikipedia.org/wiki/Antithetic_variates)**, doesn't work with every function, but works here because the function f(x) always decreases as x increases.) 
+
+![antithetic](antithetic.png)
 
 > simulated mean:  3.1389
 
