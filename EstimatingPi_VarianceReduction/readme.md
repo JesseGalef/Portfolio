@@ -14,7 +14,7 @@ This technique works, but it's not the most precise. There's a fair bit of varia
 Another way to find the quarter-circle's area is to treat it as a function and take its average value. (Area is average height times width, the width is 1, so the area inside the quarter-circle is just its average height.) That would give us pi/4, so we multiply by 4 to get our estimate for pi. 
 y^2+x^2=1
 y^2=1-x^2
-f(x)=$\sqrt{1-x^2}$
+f(x)=√(1-x^2)
 We have 10,000 random numbers between 0 and 1; all we have to do is calculate f(x) for each and take the mean:
 
 ![means](means.png)
@@ -46,18 +46,18 @@ Lo and behold, our 95% confidence interval has narrowed down to 0.013, still onl
 It turns out we can squeeze a bit more information out of those randomly generated numbers. If we know the exact expected value for a part of the function, we can be more deliberate about offsetting the variance. In this case, let's use c(x)=x^2 as our "[control variate](https://en.wikipedia.org/wiki/Control_variates) function", since we know that the average value of x^2 from 0 to 1 is exactly 1/3. 
 
 Where our simulated function was 
-f(x)=$\sqrt{1-x^2}$ 
+f(x)=√(1-x^2)
 now we add a term that will have an expected value of 0, but will help reduce variance: 
-f'(x)=$\sqrt{1-x^2}$+b(x^2-$\frac{1}{3}$)
+f'(x)=√(1-x^2)+b(x^2-(1/3))
 
 or each of our 10,000 random x's, if x^2 is above average, we know that f(x) will probably be a bit *below* average, and we nudge it up. If x^2 is below average, we know f(x) is likely a bit high, and nudge it down. The overall expected value doesn't change, but we're compressing things even further toward the mean. 
 
 The constant 'b' in our offset term determines how much we 'nudge' our function, and is estimated based on how our control variate covaries with the target function: 
-$\frac{Covariance(f(x), c(x))}{Variance(c(x))}$
+Covariance(f(x), c(x)) / Variance(c(x))
 (In this case, b is about 2.9) Here's what we get: ![controlVariates](controlVariates.png)
 
-> simulated mean:  3.1412
-> 95% confidence interval: 3.1381 - 3.1443
+> simulated mean:  3.1412 \n
+> 95% confidence interval: 3.1381 - 3.1443 \n
 > confidence interval size: 0.0062
 
 See how the offset flattens our new function (in orange) to be tightly centered around 3.14? 
