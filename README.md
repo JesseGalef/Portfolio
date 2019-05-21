@@ -1,4 +1,4 @@
-# Jesse Galef Data Science Portfolio Projects
+# Jesse Galef Data Science & Machine Learning Portfolio Projects
 
 **[Resume (pdf)](https://github.com/JesseGalef/Portfolio/raw/master/Jesse_Galef_Resume.pdf)** **[LinkedIn](https://www.linkedin.com/in/jessegalef)**
 
