@@ -16,7 +16,7 @@ One result:
 
 <img src='Trumpiest_Sentences/assets/widerPronouns.png' width='500' />
 
-## 2) [Improving Image Classification with Data Augmentation](https://github.com/JesseGalef/Portfolio/tree/master/Image_Augmentation) -- Pretending you have more data than you do
+## 2) [Improving Image Classification with Data Augmentation](https://github.com/JesseGalef/Portfolio/tree/master/Image_Augmentation/ImageAugmentation_Cifar10.ipynb) -- Pretending you have more data than you do
 
 Summary: In training a neural net, having more training images can make a real difference -- but that can be expensive. Rather than paying a grad student to go take and label more pictures, you can be creative and reuse the images you have.
 
@@ -24,7 +24,11 @@ To demonstrate, I built a convolutional neural net with Keras to classify images
 
 Even without any fine-tuning, it made a big difference -- models that augmented their data during training not only scored significantly better than models which didn't; they scored even better than models trained with twice as much data.
 
-<img src='Image_Augmentation/result_graph.png' width='500' />
+<img src='Image_Augmentation/result_graph.png' />
+
+Without data augmentation (orange), the models' performance tended to level off much more quickly, having learned what they could after about 20 training epochs. 
+
+The models using data augmentation (blue) were able to keep learning for longer, and probably would have continued to improve beyond the 100 epochs I trained them for.
 
 (As is often the case, Keras now has built-in functionality to do this, but I wanted to demonstrate more of the concept for myself)
 
