@@ -19,7 +19,7 @@ One result:
 <img src='Trumpiest_Sentences/assets/widerPronouns.png' width='500' />
 
 
-## 2) [Regularization Hyperparameter Tuning with Reinforcement Learning:](https://github.com/JesseGalef/Portfolio/tree/master/Hyperparm_Tuning_RL) -- Applying Proximal Policy Optimization to Reduce Overfitting
+## 2) [Regularization Hyperparameter Tuning with Reinforcement Learning:](https://github.com/JesseGalef/Portfolio/tree/master/Hyperparam_Tuning_RL) -- Applying Proximal Policy Optimization to Reduce Overfitting
 
 ### Reinforcement Learning, Hyperparameter Tuning, Regularization, Keras Deep Learning Library, Scikit-Learn Linear Models
 
@@ -29,13 +29,13 @@ The ElasticNet model requires two hyperparameters for regularization, l1_ratio a
 
 Like the Google Brain paper, I used OpenAI's [Proximal Policy Optimization algorithm](https://spinningup.openai.com/en/latest/algorithms/ppo.html) algorithm to keep the reinforcement learner progressing with steady steps rather than jumping around wildly. I trained it for 100 minibatches of 16 samples, updating its distributions after each minibatch.
 
-<img src='Hyperparm_Tuning_RL/results_with_path.png' />
+<img src='Hyperparam_Tuning_RL/results_with_path.png' />
 
 The distribution for l1_ratio quickly fell near zero until the values for alpha concentrated around .45, at which point the model began sampling larger l1_ratio values again. When this path is plotted along with the performance of each hyperparameter combination, it looks like the reinforcement learning model was finding the best area to sample from:
 
 Our tuned ElasticNet outperformed the out-of-the-box LassoCV and RidgeCV models but took significantly longer. 
 
-<img src='Hyperparm_Tuning_RL/scores.png' />
+<img src='Hyperparam_Tuning_RL/scores.png' />
 
 It was fun to learn and demonstrate the process, but unless the extra tiny bit of performance is vital, simpler approaches are likely better when you have so few hyperparameters to tune.
 
