@@ -18,7 +18,29 @@ One result:
 
 <img src='Trumpiest_Sentences/assets/widerPronouns.png' width='500' />
 
-## 2) [Improving Image Classification with Data Augmentation](https://github.com/JesseGalef/Portfolio/tree/master/Image_Augmentation/ImageAugmentation_Cifar10.ipynb) -- Pretending you have more data than you do
+
+## 2) [Regularization Hyperparameter Tuning with Reinforcement Learning:](https://github.com/JesseGalef/Portfolio/tree/master/Hyperparm_Tuning_RL) -- Applying Proximal Policy Optimization to Reduce Overfitting
+
+### Reinforcement Learning, Hyperparameter Tuning, Regularization, Keras Deep Learning Library, Scikit-Learn Linear Models
+
+Summary: Following an idea I saw in [a paper I read](https://arxiv.org/abs/1805.09501) for my Deep Learning class, I wanted to try using reinforcement learning to tune regularization hyperparameters and prevent overfitting. 
+
+The ElasticNet model requires two hyperparameters for regularization, l1_ratio and alpha. The goal is to try a number of random combinations of the two, becoming less random over time as it learns which combinations performed better.
+
+Like the Google Brain paper, I used OpenAI's [Proximal Policy Optimization algorithm](https://spinningup.openai.com/en/latest/algorithms/ppo.html) algorithm to keep the reinforcement learner progressing with steady steps rather than jumping around wildly. I trained it for 100 minibatches of 16 samples, updating its distributions after each minibatch.
+
+<img src='Hyperparm_Tuning_RL/results_with_path.png' />
+
+The distribution for l1_ratio quickly fell near zero until the values for alpha concentrated around .45, at which point the model began sampling larger l1_ratio values again. When this path is plotted along with the performance of each hyperparameter combination, it looks like the reinforcement learning model was finding the best area to sample from:
+
+Our tuned ElasticNet outperformed the out-of-the-box LassoCV and RidgeCV models but took significantly longer. 
+
+<img src='Hyperparm_Tuning_RL/scores.png' />
+
+It was fun to learn and demonstrate the process, but unless the extra tiny bit of performance is vital, simpler approaches are likely better when you have so few hyperparameters to tune.
+
+
+## 3) [Improving Image Classification with Data Augmentation](https://github.com/JesseGalef/Portfolio/tree/master/Image_Augmentation/) -- Pretending you have more data than you do
 
 ### Image Processing, Convolutional Neural Nets, Keras Deep Learning Library, Data Augmentation
 
@@ -31,7 +53,7 @@ This project demonstrates the advantages of using data augmentation on the CIFAR
 (And actually, since each epoch updates the weights for each batch of 128 images in the training set, the un-augmented model with 40,000 samples had four times as many updates. If allowed to train longer, the augmented model with 10,000 may surpass it.)
 
 
-## 3) [Evaluating NFL Play Calling Predictability](https://github.com/JesseGalef/Portfolio/tree/master/NFL_Playcalling) - Controlling for multiple non-linear confounding variables using inverse probability of treatment weighting
+## 4) [Evaluating NFL Play Calling Predictability](https://github.com/JesseGalef/Portfolio/tree/master/NFL_Playcalling) - Controlling for multiple non-linear confounding variables using inverse probability of treatment weighting
 
 ### Non-Linear Models (Random Forest Classifiers), Inverse Propensity Score Weighting, Data Visualization, Feature Engineering
 
@@ -43,7 +65,7 @@ The project is an exercise in feature engineering and the 'inverse probability o
 
 <img src='NFL_Playcalling/data/all_yards_playcalling.png' width='500' />
 
-## 4) [Making Judgements on Limited Information](https://github.com/JesseGalef/Portfolio/tree/master/Bayesian_Inference_pymc3_NFL_kickers) - Using Bayesian Inference to Compare Hypothetical Options
+## 5) [Making Judgements on Limited Information](https://github.com/JesseGalef/Portfolio/tree/master/Bayesian_Inference_pymc3_NFL_kickers) - Using Bayesian Inference to Compare Hypothetical Options
 
 ### Probabalistic Programming via PyMC3 Package, Bayesian Modeling, Web Scraping
 
@@ -55,7 +77,7 @@ The project scrapes data from NFL.com to use as a prior distribution, then it sh
 
 <img src='Bayesian_Inference_pymc3_NFL_kickers/assets/AccuracyProbabilityDistributions_92.png' width='500' />
 
-## 5) [Estimating Pi from Random Numbers](https://github.com/JesseGalef/Portfolio/tree/master/EstimatingPi_VarianceReduction) - Reducing Variance using Antithetic and Control Variates
+## 6) [Estimating Pi from Random Numbers](https://github.com/JesseGalef/Portfolio/tree/master/EstimatingPi_VarianceReduction) - Reducing Variance using Antithetic and Control Variates
 
 ### Random Simulation, Variance Reduction Techniques
 
