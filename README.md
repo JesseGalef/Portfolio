@@ -4,17 +4,17 @@
 
 --- 
 
-1) Quantifying the 'Trumpiness' of Political Speech Using Natural Language Processing](https://github.com/JesseGalef/Portfolio/tree/master/Trumpiest_Sentences) - Natural Language Processing, Logistic Regression, Cross Validation, Web Scraping, Visualization, Interactive Visualization with D3
+1) *[Quantifying the 'Trumpiness' of Political Speech Using Natural Language Processing](https://github.com/JesseGalef/Portfolio/tree/master/Trumpiest_Sentences)* - Natural Language Processing, Logistic Regression, Cross Validation, Web Scraping, Visualization, Interactive Visualization with D3
 
-2) [Regularization Hyperparameter Tuning with Reinforcement Learning:](https://github.com/JesseGalef/Portfolio/tree/master/Hyperparam_Tuning_RL): Applying Proximal Policy Optimization to Reduce Overfitting - Reinforcement Learning, Hyperparameter Tuning, Regularization, Keras Deep Learning Library, Scikit-Learn Linear Models
+2) *[Regularization Hyperparameter Tuning with Reinforcement Learning](https://github.com/JesseGalef/Portfolio/tree/master/Hyperparam_Tuning_RL):* Implementing Proximal Policy Optimization to Reduce Overfitting - Reinforcement Learning, Hyperparameter Tuning, Regularization, Keras Deep Learning Library, Scikit-Learn Linear Models
 
-3) [Improving Image Classification with Data Augmentation](https://github.com/JesseGalef/Portfolio/tree/master/Image_Augmentation/) -- Image Processing, Convolutional Neural Nets, Keras Deep Learning Library, Data Augmentation
+3) *[Improving Image Classification with Data Augmentation](https://github.com/JesseGalef/Portfolio/tree/master/Image_Augmentation/)* -- Image Processing, Convolutional Neural Nets, Keras Deep Learning Library, Data Augmentation
 
-4) [Evaluating NFL Play Calling Predictability](https://github.com/JesseGalef/Portfolio/tree/master/NFL_Playcalling): Controlling for multiple non-linear confounding variables using inverse probability of treatment weighting -- Non-Linear Models, Inverse Propensity Score Weighting, Feature Engineering, Data Visualization
+4) *[Evaluating NFL Play Calling Predictability](https://github.com/JesseGalef/Portfolio/tree/master/NFL_Playcalling):* Controlling for multiple non-linear confounders using inverse probability of treatment weighting -- Non-Linear Models, Inverse Propensity Score Weighting, Feature Engineering, Data Visualization
 
-5) [Making Judgements on Limited Information](https://github.com/JesseGalef/Portfolio/tree/master/Bayesian_Inference_pymc3_NFL_kickers): Using Bayesian Inference to Compare Hypothetical Options -- Probabalistic Programming (via PyMC3 Package), Bayesian Modeling, Web Scraping
+5) *[Making Judgements on Limited Information](https://github.com/JesseGalef/Portfolio/tree/master/Bayesian_Inference_pymc3_NFL_kickers):* Using Bayesian Inference to Compare Hypothetical Options -- Probabalistic Programming (via PyMC3 Package), Bayesian Modeling, Web Scraping
 
-6) [Estimating Pi from Random Numbers](https://github.com/JesseGalef/Portfolio/tree/master/EstimatingPi_VarianceReduction): Reducing Variance using Antithetic and Control Variates -- Random Simulation, Variance Reduction Techniques
+6) *[Estimating Pi from Random Numbers](https://github.com/JesseGalef/Portfolio/tree/master/EstimatingPi_VarianceReduction)*: Reducing Variance using Antithetic and Control Variates -- Random Simulation, Variance Reduction Techniques
 
 --- 
 
