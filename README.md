@@ -3,7 +3,8 @@
 **[Resume (pdf)](https://github.com/JesseGalef/Portfolio/raw/master/Jesse_Galef_Resume.pdf)** **[LinkedIn](https://www.linkedin.com/in/jessegalef)**
 
 --- 
-[1) Quantifying the 'Trumpiness' of Political Speech Using Natural Language Processing](https://github.com/JesseGalef/Portfolio/tree/master/Trumpiest_Sentences) - Natural Language Processing, Logistic Regression, Cross Validation, Web Scraping, Visualization, Interactive Visualization with D3
+
+1) Quantifying the 'Trumpiness' of Political Speech Using Natural Language Processing](https://github.com/JesseGalef/Portfolio/tree/master/Trumpiest_Sentences) - Natural Language Processing, Logistic Regression, Cross Validation, Web Scraping, Visualization, Interactive Visualization with D3
 
 2) [Regularization Hyperparameter Tuning with Reinforcement Learning:](https://github.com/JesseGalef/Portfolio/tree/master/Hyperparam_Tuning_RL): Applying Proximal Policy Optimization to Reduce Overfitting - Reinforcement Learning, Hyperparameter Tuning, Regularization, Keras Deep Learning Library, Scikit-Learn Linear Models
 
