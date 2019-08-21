@@ -41,7 +41,7 @@ Summary: Following an idea I saw in [a paper I read](https://arxiv.org/abs/1805.
 
 The ElasticNet model requires two hyperparameters for regularization, l1_ratio and alpha. The goal is to try a number of random combinations of the two, becoming less random over time as it learns which combinations performed better.
 
-Like the Google Brain paper, I used OpenAI's [Proximal Policy Optimization algorithm](https://spinningup.openai.com/en/latest/algorithms/ppo.html) algorithm to keep the reinforcement learner progressing with steady steps rather than jumping around wildly. I trained it for 100 minibatches of 16 samples, updating its distributions after each minibatch.
+Like the Google Brain paper, I used OpenAI's [Proximal Policy Optimization algorithm](https://spinningup.openai.com/en/latest/algorithms/ppo.html) to keep the reinforcement learner progressing with steady steps rather than jumping around wildly. I trained it for 100 minibatches of 16 samples, updating its distributions after each minibatch.
 
 <img src='Hyperparam_Tuning_RL/results_with_path.png' />
 
