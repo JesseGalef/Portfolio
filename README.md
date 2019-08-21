@@ -8,13 +8,15 @@
 
 2) *[Regularization Hyperparameter Tuning with Reinforcement Learning](https://github.com/JesseGalef/Portfolio/tree/master/Hyperparam_Tuning_RL):* Implementing Proximal Policy Optimization to Reduce Overfitting - Reinforcement Learning, Hyperparameter Tuning, Regularization, Keras Deep Learning Library, Scikit-Learn Linear Models
 
-3) *[Improving Image Classification with Data Augmentation](https://github.com/JesseGalef/Portfolio/tree/master/Image_Augmentation/)* -- Image Processing, Convolutional Neural Nets, Keras Deep Learning Library, Data Augmentation
+3) *[Comparing Techniques for Audio Style Transfer For Converting One Voice to Another](https://github.com/JesseGalef/Portfolio/tree/master/Speech_Style_Transfer)* -- Audio Processing, Speech Recognition, Style Transfer, Deep Learning
 
-4) *[Evaluating NFL Play Calling Predictability](https://github.com/JesseGalef/Portfolio/tree/master/NFL_Playcalling):* Controlling for multiple non-linear confounders using inverse probability of treatment weighting -- Non-Linear Models, Inverse Propensity Score Weighting, Feature Engineering, Data Visualization
+4) *[Improving Image Classification with Data Augmentation](https://github.com/JesseGalef/Portfolio/tree/master/Image_Augmentation/)* -- Image Processing, Convolutional Neural Nets, Keras Deep Learning Library, Data Augmentation
 
-5) *[Making Judgements on Limited Information](https://github.com/JesseGalef/Portfolio/tree/master/Bayesian_Inference_pymc3_NFL_kickers):* Using Bayesian Inference to Compare Hypothetical Options -- Probabalistic Programming (via PyMC3 Package), Bayesian Modeling, Web Scraping
+5) *[Evaluating NFL Play Calling Predictability](https://github.com/JesseGalef/Portfolio/tree/master/NFL_Playcalling):* Controlling for multiple non-linear confounders using inverse probability of treatment weighting -- Non-Linear Models, Inverse Propensity Score Weighting, Feature Engineering, Data Visualization
 
-6) *[Estimating Pi from Random Numbers](https://github.com/JesseGalef/Portfolio/tree/master/EstimatingPi_VarianceReduction)*: Reducing Variance using Antithetic and Control Variates -- Random Simulation, Variance Reduction Techniques
+6) *[Making Judgements on Limited Information](https://github.com/JesseGalef/Portfolio/tree/master/Bayesian_Inference_pymc3_NFL_kickers):* Using Bayesian Inference to Compare Hypothetical Options -- Probabalistic Programming (via PyMC3 Package), Bayesian Modeling, Web Scraping
+
+7) *[Estimating Pi from Random Numbers](https://github.com/JesseGalef/Portfolio/tree/master/EstimatingPi_VarianceReduction)*: Reducing Variance using Antithetic and Control Variates -- Random Simulation, Variance Reduction Techniques
 
 --- 
 
@@ -54,7 +56,24 @@ Our tuned ElasticNet outperformed the out-of-the-box LassoCV and RidgeCV models 
 It was fun to learn and demonstrate the process, but unless the extra tiny bit of performance is vital, simpler approaches are likely better when you have so few hyperparameters to tune.
 
 
-## 3) [Improving Image Classification with Data Augmentation](https://github.com/JesseGalef/Portfolio/tree/master/Image_Augmentation/) -- Pretending you have more data than you do
+## 3) *[Comparing Techniques for Audio Style Transfer For Converting One Voice to Another](https://github.com/JesseGalef/Portfolio/tree/master/Speech_Style_Transfer)*
+
+### Audio Processing, Speech Recognition, Style Transfer, Deep Learning
+
+This project for my Speech Recognition course explored audio style transfer in the domain of speech, comparing how well three different feature extraction methods represent a speaker’s style: AutoRegressive modeling coefficients of the vocal tract, Speaker identification faux i-Vectors, and a wide set of random convolutional filters.
+
+Using these three different feature sets to model a speaker’s style profile, a content audio was modified through a series of convolutional and residual layers to more closely match the speaking style of the late Alan Rickman.
+
+<img src='Speech_Style_Transfer/Transfer_Graph.png' />
+
+While the neural nets proved capable of converting a given vocal tract profile to match that of the target’s, the modifications proved insufficient to sound as though the resynthesized audio came from a different speaker. By only adjusting the vocal tract information – leaving the vocal cord excitation signal’s pitch and amplitude unchanged – the alterations left out many important subjective elements of Alan Rickman’s voice. Future work could include both elements of the source-filter model in their style transfer and would likely produce higher quality results.
+
+Writeup PDF: https://github.com/JesseGalef/Portfolio/blob/master/Speech_Style_Transfer/jbg2160_finalWriteup.pdf
+
+Code: https://colab.research.google.com/drive/157CErdbKP68nU86g5K645Czn5irG8gKL
+
+
+## 4) [Improving Image Classification with Data Augmentation](https://github.com/JesseGalef/Portfolio/tree/master/Image_Augmentation/) -- Pretending you have more data than you do
 
 ### Image Processing, Convolutional Neural Nets, Keras Deep Learning Library, Data Augmentation
 
@@ -67,7 +86,7 @@ This project demonstrates the advantages of using data augmentation on the CIFAR
 (And actually, since each epoch updates the weights for each batch of 128 images in the training set, the un-augmented model with 40,000 samples had four times as many updates. If allowed to train longer, the augmented model with 10,000 may surpass it.)
 
 
-## 4) [Evaluating NFL Play Calling Predictability](https://github.com/JesseGalef/Portfolio/tree/master/NFL_Playcalling) - Controlling for multiple non-linear confounding variables using inverse probability of treatment weighting
+## 5) [Evaluating NFL Play Calling Predictability](https://github.com/JesseGalef/Portfolio/tree/master/NFL_Playcalling) - Controlling for multiple non-linear confounding variables using inverse probability of treatment weighting
 
 ### Non-Linear Models (Random Forest Classifiers), Inverse Propensity Score Weighting, Data Visualization, Feature Engineering
 
@@ -79,7 +98,7 @@ The project is an exercise in feature engineering and the 'inverse probability o
 
 <img src='NFL_Playcalling/data/all_yards_playcalling.png' width='500' />
 
-## 5) [Making Judgements on Limited Information](https://github.com/JesseGalef/Portfolio/tree/master/Bayesian_Inference_pymc3_NFL_kickers) - Using Bayesian Inference to Compare Hypothetical Options
+## 6) [Making Judgements on Limited Information](https://github.com/JesseGalef/Portfolio/tree/master/Bayesian_Inference_pymc3_NFL_kickers) - Using Bayesian Inference to Compare Hypothetical Options
 
 ### Probabalistic Programming via PyMC3 Package, Bayesian Modeling, Web Scraping
 
@@ -91,7 +110,7 @@ The project scrapes data from NFL.com to use as a prior distribution, then it sh
 
 <img src='Bayesian_Inference_pymc3_NFL_kickers/assets/AccuracyProbabilityDistributions_92.png' width='500' />
 
-## 6) [Estimating Pi from Random Numbers](https://github.com/JesseGalef/Portfolio/tree/master/EstimatingPi_VarianceReduction) - Reducing Variance using Antithetic and Control Variates
+## 7) [Estimating Pi from Random Numbers](https://github.com/JesseGalef/Portfolio/tree/master/EstimatingPi_VarianceReduction) - Reducing Variance using Antithetic and Control Variates
 
 ### Random Simulation, Variance Reduction Techniques
 
