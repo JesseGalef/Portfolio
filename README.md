@@ -1,6 +1,6 @@
 # Jesse Galef Data Science & Machine Learning Portfolio Projects
 
-**[Resume (pdf)](https://github.com/JesseGalef/Portfolio/raw/master/Jesse_Galef_Resume.pdf)** **[LinkedIn](https://www.linkedin.com/in/jessegalef)**
+**[LinkedIn](https://www.linkedin.com/in/jessegalef)**
 
 --- 
 
@@ -28,7 +28,7 @@ Summary: Donald Trump and Hillary Clinton have fairly distinct speaking styles o
 
 This project scrapes transcripts from CSPAN.org to train a model to identify the most important terms for identifying which candidate said a given sentence, and to find the most emblematic sentence for each (The 'Trumpiest', if you will).
 
-In addition to graphs visualizing the results, I created [an interactive D3 JavaScript page](https://rawgit.com/jessegalef/portfolio/master/Trumpiest_Sentences/interactive.html) for visitors to play with the results, enter their own sentences for evaluation, and look up terms.
+In addition to graphs visualizing the results, I created [an interactive D3 JavaScript page](http://jessegalef.github.io/Portfolio/Trumpiest_Sentences/interactive.html) for visitors to play with the results, enter their own sentences for evaluation, and look up terms.
 
 One result:
 
